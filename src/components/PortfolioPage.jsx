@@ -20,7 +20,7 @@ export default function PortfolioPage() {
 
             <div className="mt-8 flex gap-4">
               <button 
-              onClick={() => window.location.href = 'mailto:iknowrohit19@gmail.com'}
+              onClick={() => window.location.href = 'mailto:devrohit115@gmail.com'}
               className="flex items-center cursor-pointer gap-2 border border-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500"
               >  
                 CONTACT ME <HiOutlineUser />
