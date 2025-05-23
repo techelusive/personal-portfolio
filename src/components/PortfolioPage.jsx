@@ -25,9 +25,9 @@ export default function PortfolioPage() {
               >  
                 CONTACT ME <HiOutlineUser />
               </button>
-              <button className="flex items-center cursor-pointer gap-2 bg-gradient-to-r from-pink-400 to-purple-500 text-white px-6 py-2 rounded-full">
+              {/*<button className="flex items-center cursor-pointer gap-2 bg-gradient-to-r from-pink-400 to-purple-500 text-white px-6 py-2 rounded-full">
                 GET RESUME <HiOutlineDownload />
-              </button>
+              </button>*/}
             </div>
           </div>
 
