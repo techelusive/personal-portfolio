@@ -49,6 +49,7 @@ export default function PortfolioPage() {
               <p>{'}'};</p>
             </div>
           </div>
+
         </div>
       </main>
     </div>
