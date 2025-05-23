@@ -1,0 +1,38 @@
+.education-card {
+  position: relative;
+  background-color: #1e293b;  /* solid background inside */
+  border: 3px solid transparent; /* create space for border */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  z-index: 0;
+  overflow: visible;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: -3px;    /* same size as border */
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 1rem;  /* match border-radius */
+  background: linear-gradient(45deg, #00ffff, #8a2be2, #ff1493, #00ffff);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: glowing-border 8s ease infinite;
+
+  /* mask the center so only the border line glows */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude; /* for other browsers */
+  padding: 3px; /* thickness of the border */
+}
+
+@keyframes glowing-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
